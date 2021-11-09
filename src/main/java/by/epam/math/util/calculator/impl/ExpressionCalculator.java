@@ -1,10 +1,12 @@
-package by.epam.math.util.calculator;
+package by.epam.math.util.calculator.impl;
 
+import by.epam.math.util.calculator.Calculator;
+import by.epam.math.util.calculator.CalculatorException;
 import by.epam.math.util.operator.OpenParenthesis;
 import by.epam.math.util.operator.Operator;
 import by.epam.math.util.operator.OperatorProvider;
 import by.epam.math.util.validator.ExpressionValidator;
-import by.epam.math.util.validator.ParenthesesOrderValidator;
+import by.epam.math.util.validator.impl.ParenthesesOrderValidator;
 
 import java.util.LinkedList;
 
@@ -16,7 +18,13 @@ import java.util.LinkedList;
  * @version 1.0
  */
 public class ExpressionCalculator implements Calculator {
+    /**
+     * Constant containing the exception message
+     */
     private static final String WRONG_PARENTHESES_ORDER_MSG = "Wrong order of open and closed parentheses!";
+    /**
+     * ExpressionValidator object to check input expression for validity
+     */
     private static final ExpressionValidator parenthesesOrderValidator = new ParenthesesOrderValidator();
 
     /**

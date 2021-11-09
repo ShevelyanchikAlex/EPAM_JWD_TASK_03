@@ -18,7 +18,7 @@ public abstract class Operator {
      */
     private final Operation operation;
     /**
-     * Sign of operation
+     * Operation sign
      */
     private final char operationSign;
 
