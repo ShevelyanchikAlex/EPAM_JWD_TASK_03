@@ -17,8 +17,8 @@ public class ExpressionCalculatorTest {
 
     @Test
     public void testCalculate() {
-        String expression = "(2+2)* 3  + 10";
-        double expectedResult = 22;
+        String expression = "(2+2)* 3  + 10/2";
+        double expectedResult = 17;
 
         Calculator calculator = new ExpressionCalculator();
         double realResult = 0;

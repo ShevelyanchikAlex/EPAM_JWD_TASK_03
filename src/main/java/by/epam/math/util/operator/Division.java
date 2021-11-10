@@ -11,6 +11,6 @@ public class Division extends Operator {
      * Parameterless {@link Division} constructor
      */
     public Division() {
-        super(1, (a, b) -> (a / b), '/');
+        super(1, (a, b) -> (b / a), '/');
     }
 }
